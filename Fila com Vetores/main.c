@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<stdlib.h>
-#include "fila.h" //executar também com “fila2.h”
+#include "fila.h"
 
 int main(void){
 	int a, qtd;
@@ -16,7 +16,7 @@ int main(void){
 	Fila* f2=inverte(f1);
 	fila_imprime(f2);
 	qtd=qtd_maior(f1,20);
-	printf("Núm. de elem. maiores que 20 em f1: %d\n",qtd);
+	printf("NÃºm. de elem. maiores que 20 em f1: %d\n",qtd);
 	printf("Qtd. elem. pares na fila f1: %d\n",pares(f1));
 	
 	fila_libera(f1);
