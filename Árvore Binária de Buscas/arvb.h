@@ -2,19 +2,19 @@
 
 typedef struct arvb ArvB;
 
-/*FunÁ„o que cria uma ¡rvore Bin·ria de Busca Vazia.*/
+/*Fun√ß√£o que cria uma √Årvore Bin√°ria de Busca Vazia.*/
 ArvB* arvb_cria_vazia(void);
-/*Testa se uma ¡rvore Bin·ria È vazia.*/
+/*Testa se uma √Årvore Bin√°ria √© vazia.*/
 int arvb_vazia(ArvB *a);
-/*FunÁ„o que busca a sub-·rvore que contÈm um inteiro.*/
+/*Fun√ß√£o que busca a sub-√°rvore que cont√©m um inteiro.*/
 ArvB* arvb_busca(ArvB *a,int c);
-/*FunÁ„o que imprime os elementos de uma ¡rvore.*/
+/*Fun√ß√£o que imprime os elementos de uma √Årvore.*/
 void arvb_imprime(ArvB *a);
-/*FunÁ„o que insere um inteiro em uma ¡rvore.*/
+/*Fun√ß√£o que insere um inteiro em uma √Årvore.*/
 ArvB* arvb_insere(ArvB *a, int c);
-/*FunÁ„o que remove um inteiro em uma ¡rvore.*/
+/*Fun√ß√£o que remove um inteiro em uma √Årvore.*/
 ArvB* arvb_remove(ArvB *a, int c);
-/*Libera o espaÁo alocado para uma ¡rvore.*/
+/*Libera o espa√ßo alocado para uma √Årvore.*/
 void arvb_libera(ArvB *a);
 /////////////////////////////////////////////
 
@@ -24,9 +24,11 @@ int folhas_div_n(ArvB* a, int n);
 int isdegenerada(ArvB* a);
 // nos de uma arvore binaria
 int nos_fb_n(ArvB* a, int n);
-// funÁ„o para verificar o tamanho da avore
+// fun√ß√£o para verificar o tamanho da avore
 int arv_altura(ArvB *a);
 //elementos comuns de entre listas
 void impressao_arv_elem_comuns(ArvB* a, ArvB* b);
 //imprime por niveis
+void imprimir_nivel(ArvB* a, int nivel);
 //void impressao_arv_niveis(ArvB* a);
+void impressao_arv_niveis(ArvB* a);
