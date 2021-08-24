@@ -144,7 +144,7 @@ int nos_fb_n(ArvB* a, int n){
 	return nosFb(a, n);
 }
 
-// função para verificar o tamanho da avore
+// funÃ§Ã£o para verificar o tamanho da avore
 int arv_altura(ArvB *a){
 	if(arvb_vazia(a))
 		return -1;
@@ -170,3 +170,25 @@ void impressao_arv_elem_comuns(ArvB* a, ArvB* b){
 	}
 }
 
+void imprimir_nivel(ArvB* a, int num){
+	
+	if(a != NULL && num == 0){
+		printf("%d ", a->info);
+	}else if(a != NULL){
+		imprimir_nivel(a->esq, num - 1);
+		imprimir_nivel(a->dir, num - 1);
+	}
+}
+
+void impressao_arv_niveis(ArvB* a){
+	
+	int g;
+	
+	int impressao = arv_altura(a) + 1;
+	
+	for(g = 0; g < impressao; g++){
+		printf("nivel %d - ", g);
+		imprimir_nivel(a, g);
+		printf("\n");
+	}	
+}
